@@ -1,4 +1,4 @@
 docker==4.0.2
 molecule==2.22
 pytest==5.2.0
-tox==3.10.0
+tox==3.14.0
