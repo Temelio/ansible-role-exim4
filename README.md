@@ -1,4 +1,4 @@
-# ansible-role-exim4
+# exim4
 
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.com/Temelio/exim4.svg?branch=master)](https://travis-ci.org/Temelio/exim4)

@@ -1,0 +1,18 @@
+---
+
+galaxy_info:
+  author: 'Lise Machetel'
+  description: 'Ansible role to install and configure exim4'
+  company: 'Temelio (https://temelio.com)'
+  license: 'MIT'
+  min_ansible_version: '2.4'
+  github_branch: 'master'
+  role_name: 'exim4'
+  platforms:
+    - name: 'Ubuntu'
+      versions:
+        - 'xenial'
+        - 'bionic'
+  galaxy_tags:
+    - 'system'
+dependencies: []
