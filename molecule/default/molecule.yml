@@ -7,36 +7,18 @@ driver:
 lint:
   name: 'yamllint'
 platforms:
-  - name: "exim4-docker-centos7"
-    image: 'centos/systemd:latest'
-    command: '/sbin/init'
-    cap_add:
-      - 'SYS_PTRACE'
-    privileged: True
-  - name: "exim4-docker-jessie"
-    image: 'minimum2scp/systemd-jessie:latest'
-    command: '/sbin/init'
-    cap_add:
-      - 'SYS_PTRACE'
-    privileged: True
-  - name: "exim4-docker-stretch"
-    image: 'minimum2scp/systemd-stretch:latest'
-    command: '/sbin/init'
-    cap_add:
-      - 'SYS_PTRACE'
-    privileged: True
   - name: "exim4-docker-xenial"
     image: 'solita/ubuntu-systemd:16.04'
     command: '/sbin/init'
     cap_add:
       - 'SYS_PTRACE'
-    privileged: True
+    privileged: true
   - name: "exim4-docker-bionic"
     image: 'solita/ubuntu-systemd:18.04'
     command: '/sbin/init'
     cap_add:
       - 'SYS_PTRACE'
-    privileged: True
+    privileged: true
 provisioner:
   name: 'ansible'
   lint:
@@ -54,4 +36,4 @@ verifier:
   lint:
     name: 'flake8'
   options:
-    sudo: True
+    sudo: true

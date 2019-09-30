@@ -1,0 +1,9 @@
+{{ ansible_managed | comment }}
+# password file used when the local exim is authenticating to a remote
+# host as a client.
+#
+# see exim4_passwd_client(5) for more documentation
+#
+{% for item in item.options %}
+{{ item.smtp }}:{{ item.login }}:{{ item.passwd }}
+{% endfor %}
