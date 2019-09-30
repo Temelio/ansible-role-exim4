@@ -1,10 +1,10 @@
 # exim4
 
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.com/Temelio/exim4.svg?branch=master)](https://travis-ci.org/Temelio/exim4)
-[![Updates](https://pyup.io/repos/github/Temelio/exim4/shield.svg)](https://pyup.io/repos/github/Temelio/ansible-role-exim4/)
+[![Build Status](https://travis-ci.com/Temelio/exim4.svg?branch=master)](https://travis-ci.com/Temelio/exim4)
+[![Updates](https://pyup.io/repos/github/Temelio/ansible-role-exim4/shield.svg)](https://pyup.io/repos/github/Temelio/ansible-role-exim4/)
 [![Python 3](https://pyup.io/repos/github/Temelio/ansible-role-exim4/python-3-shield.svg)](https://pyup.io/repos/github/Temelio/ansible-role-exim4/)
-[![Ansible Role](https://img.shields.io/ansible/role/.svg)](https://galaxy.ansible.com/Temelio/exim4/)
+[![Ansible Role](https://img.shields.io/ansible/role/43634.svg)](https://galaxy.ansible.com/Temelio/exim4/)
 [![GitHub tag](https://img.shields.io/github/tag/Temelio/ansible-role-exim4.svg)](https://github.com/Temelio/ansible-role-exim4/tags)
 
 

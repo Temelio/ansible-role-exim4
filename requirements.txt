@@ -1,4 +1,4 @@
-docker==3.7.2
-molecule==2.20.1
-pytest==4.5.0
-tox==3.10.0
+docker==4.0.2
+molecule==2.22
+pytest==4.6.5
+tox==3.14.0
