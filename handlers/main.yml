@@ -1,0 +1,9 @@
+---
+
+# Handlers main file for exim4 role
+- name: 'Restart Exim4'
+  systemd:
+    name: "{{ exim_daemon }}"
+    state: 'restarted'
+    daemon-reload: true
+    enabled: true

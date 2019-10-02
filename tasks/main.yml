@@ -1,0 +1,21 @@
+---
+
+# Main tasks file for exim4 role
+
+- name: 'INIT | Manage variables to use for our target'
+  import_tasks: "{{ role_path }}/tasks/manage_variables.yml"
+  tags:
+    - 'role::exim4'
+    - 'role::exim4::init'
+
+- name: 'INSTALL | Install Exim4'
+  import_tasks: "{{ role_path }}/tasks/install.yml"
+  tags:
+    - 'role::exim4'
+    - 'role::exim4::install'
+
+- name: 'CONFIG | Configure Exim4'
+  import_tasks: "{{ role_path }}/tasks/config.yml"
+  tags:
+    - 'role::exim4'
+    - 'role::exim4::config'

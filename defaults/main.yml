@@ -1,0 +1,36 @@
+---
+
+# Defaults vars file for exim4 role
+exim_package: "{{ _exim_package }}"
+exim_daemon: "{{ _exim_daemon }}"
+
+exim_config:
+  - dest: '/etc/exim4/update-exim4.conf.conf'
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
+
+exim_dc_eximconfig_configtype: 'satellite'
+exim_dc_other_hostnames: "{{ ansible_hostname }}"
+exim_dc_local_interfaces: '127.0.0.1 ; ::1'
+exim_dc_readhost: 'example.org'
+exim_dc_relay_domains: ''
+exim_dc_minimaldns: 'false'
+exim_dc_relay_nets: ''
+exim_dc_smarthost: 'smtp.example.org::465'
+exim_CFILEMODE: '644'
+exim_dc_user_split_config: false
+exim_dc_hide_mailname: 'true'
+exim_dc_mailname_in_oh: true
+exim_dc_localdelivery: 'mail_spool'
+
+exim_with_auth: 'true'
+exim_with_auth_config:
+  - dest: '/etc/exim4/passwd.client'
+    owner: 'root'
+    group: 'Debian-exim'
+    mode: '0640'
+    options:
+      - smtp: 'smtp.example.com'
+        login: 'toto'
+        passwd: 'changeme'

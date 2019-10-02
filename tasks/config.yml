@@ -1,0 +1,21 @@
+---
+- name: 'CONFIG | configure Exim4'
+  template:
+    src: "{{ role_path }}/templates/update-exim4.conf.conf.j2"
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    mode: "{{ item.mode }}"
+  with_items: "{{ exim_config }}"
+  notify: 'Restart Exim4'
+
+- name: 'CONFIG | configure Exim4 with auth'
+  template:
+    src: "{{ role_path }}/templates/passwd.client.j2"
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    mode: "{{ item.mode }}"
+  with_items: "{{ exim_with_auth_config }}"
+  notify: 'Restart Exim4'
+  when: exim_with_auth
